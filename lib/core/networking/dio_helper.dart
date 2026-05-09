@@ -7,7 +7,7 @@ import 'package:pretty_dio_logger/pretty_dio_logger.dart';
 class DioHelper {
   static Dio? dio;
 
-  static initDio() {
+  static void initDio() {
     dio ??= Dio(
       BaseOptions(
         baseUrl: ApiEndpoints.baseUrl,
@@ -18,7 +18,7 @@ class DioHelper {
     dio!.interceptors.add(PrettyDioLogger());
   }
 
-  static getRequest({
+  static Future<Response?> getRequest({
     required String endPoint,
     required Map<String, dynamic> query,
   }) async {
@@ -29,9 +29,10 @@ class DioHelper {
     } catch (e) {
       log(e.toString());
     }
+    return null;
   }
 
-  static postRequest({
+  static Future<Response?> postRequest({
     required String endPoint,
     required Map<String, dynamic> data,
   }) async {
@@ -42,5 +43,6 @@ class DioHelper {
     } catch (e) {
       log(e.toString());
     }
+    return null;
   }
 }

@@ -1,7 +1,7 @@
 import 'package:ecommerce_app/core/routing/app_routes.dart';
 import 'package:ecommerce_app/core/styling/app_colors.dart';
 import 'package:ecommerce_app/core/styling/app_styles.dart';
-import 'package:ecommerce_app/core/widgets/primay_button_widget.dart';
+import 'package:ecommerce_app/core/widgets/primary_button_widget.dart';
 import 'package:ecommerce_app/features/cart/logic/cart_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -131,7 +131,7 @@ class ProductDetailsScreen extends ConsumerWidget {
                     ],
                   ),
                   
-                                  PrimayButtonWidget(
+                                  PrimaryButtonWidget(
                                     width: 220.w, 
                                     buttonText: 'Add to Cart',
                                     icon: Icon(Icons.shopping_bag_outlined, color: AppColors.whiteColor, size: 20.sp),

@@ -2,7 +2,7 @@ import 'package:ecommerce_app/core/styling/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class PrimayButtonWidget extends StatelessWidget {
+class PrimaryButtonWidget extends StatelessWidget {
   final String? buttonText;
   final Color? buttonColor;
   final double? width;
@@ -13,7 +13,7 @@ class PrimayButtonWidget extends StatelessWidget {
   final void Function()? onPress;
   final Widget? icon; // <-- Added this
 
-  const PrimayButtonWidget({
+  const PrimaryButtonWidget({
     super.key,
     this.buttonText,
     this.buttonColor,

@@ -2,7 +2,7 @@ import 'package:ecommerce_app/core/routing/app_routes.dart';
 import 'package:ecommerce_app/core/styling/app_colors.dart';
 import 'package:ecommerce_app/core/styling/app_styles.dart';
 import 'package:ecommerce_app/core/widgets/custom_text_field.dart';
-import 'package:ecommerce_app/core/widgets/primay_button_widget.dart';
+import 'package:ecommerce_app/core/widgets/primary_button_widget.dart';
 import 'package:ecommerce_app/core/widgets/spacing_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -134,7 +134,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       ),
 
                       const HeightSpace(40),
-                      PrimayButtonWidget(
+                      PrimaryButtonWidget(
                         buttonText: "Create Account",
                         onPress: () {
                           if (_formKey.currentState!.validate()) {

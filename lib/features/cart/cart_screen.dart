@@ -2,7 +2,7 @@ import 'package:ecommerce_app/core/routing/app_routes.dart';
 import 'package:ecommerce_app/core/styling/app_colors.dart';
 import 'package:ecommerce_app/core/styling/app_styles.dart';
 import 'package:ecommerce_app/core/widgets/cart_item_card.dart';
-import 'package:ecommerce_app/core/widgets/primay_button_widget.dart';
+import 'package:ecommerce_app/core/widgets/primary_button_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart'; // 1. Import Riverpod
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -110,7 +110,7 @@ class CartScreen extends ConsumerWidget {
                   
                   SizedBox(height: 24.h),
                   
-                  PrimayButtonWidget(
+                  PrimaryButtonWidget(
                     buttonText: 'Go To Checkout',
                     icon: Icon(Icons.arrow_forward, color: AppColors.whiteColor, size: 20.sp),
                     onPress: cartItems.isEmpty ? null : () {

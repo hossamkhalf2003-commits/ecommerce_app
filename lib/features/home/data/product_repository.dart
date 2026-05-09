@@ -2,6 +2,7 @@ import 'package:dio/dio.dart';
 import '../../../core/networking/api_endpoints.dart';
 import 'product_model.dart';
 
+
 class ProductRepository {
   final Dio _dio = Dio();
 
@@ -21,8 +22,8 @@ class ProductRepository {
       return jsonData.map((json) => ProductModel.fromJson(json)).toList();
       
     } on DioException catch (e) {
-      print('----- PRODUCT API ERROR -----');
-      print('Status Code: ${e.response?.statusCode}');
+      // ignore: avoid_print
+      print(  'Error fetching products: ${e.message}');
       throw 'Failed to load products. Please check your connection.';
     } catch (e) {
       throw 'An unexpected error occurred while loading products.';

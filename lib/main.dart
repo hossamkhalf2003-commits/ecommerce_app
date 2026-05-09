@@ -2,9 +2,10 @@ import 'package:ecommerce_app/core/styling/theme_data.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:shared_preferences/shared_preferences.dart'; // New Import
+import 'package:shared_preferences/shared_preferences.dart'; 
 import 'core/local_storage/prefs_provider.dart';
-import 'core/routing/router_generation_config.dart' as RouterGenerationConfig; // New Import
+// ignore: library_prefixes
+import 'core/routing/router_generation_config.dart' as RouterGenerationConfig; 
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

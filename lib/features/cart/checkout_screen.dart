@@ -1,7 +1,7 @@
 import 'package:ecommerce_app/core/routing/app_routes.dart';
 import 'package:ecommerce_app/core/styling/app_colors.dart';
 import 'package:ecommerce_app/core/styling/app_styles.dart';
-import 'package:ecommerce_app/core/widgets/primay_button_widget.dart';
+import 'package:ecommerce_app/core/widgets/primary_button_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -195,7 +195,7 @@ class _CheckoutScreenState extends ConsumerState<CheckoutScreen> {
             child: SafeArea(
               child: _isProcessing 
                 ? Center(child: CircularProgressIndicator(color: AppColors.primaryColor))
-                : PrimayButtonWidget(
+                : PrimaryButtonWidget(
                     buttonText: 'Pay \$${total.toStringAsFixed(2)}',
                     icon: Icon(Icons.lock_outline, color: AppColors.whiteColor, size: 20.sp),
                     onPress: _processPayment,

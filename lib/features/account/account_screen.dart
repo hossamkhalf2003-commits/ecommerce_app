@@ -50,7 +50,7 @@ class AccountScreen extends ConsumerWidget {
                     backgroundColor: AppColors.greyColor.withOpacity(0.3),
                     backgroundImage: NetworkImage(user.avatar),
                     // Fallback icon just in case the image link breaks
-                    onBackgroundImageError: (_, __) => const Icon(Icons.person),
+                    onBackgroundImageError: (_, _) => const Icon(Icons.person),
                   ),
                   SizedBox(width: 16.w),
                   Expanded(
@@ -75,7 +75,7 @@ class AccountScreen extends ConsumerWidget {
             child: ListView.separated(
               padding: EdgeInsets.symmetric(horizontal: 24.w, vertical: 8.h),
               itemCount: menuItems.length,
-              separatorBuilder: (_, __) => Divider(color: AppColors.greyColor.withOpacity(0.5), height: 1),
+              separatorBuilder: (_, _) => Divider(color: AppColors.greyColor.withOpacity(0.5), height: 1),
               itemBuilder: (context, index) {
                 return ListTile(
                   contentPadding: EdgeInsets.zero,

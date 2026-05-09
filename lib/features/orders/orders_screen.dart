@@ -44,7 +44,7 @@ class OrdersScreen extends ConsumerWidget {
               padding: EdgeInsets.all(24.w),
               physics: const BouncingScrollPhysics(),
               itemCount: orders.length,
-              separatorBuilder: (_, __) => SizedBox(height: 16.h),
+              separatorBuilder: (_, _) => SizedBox(height: 16.h),
               itemBuilder: (context, index) {
                 final order = orders[index];
                 
@@ -105,7 +105,7 @@ class OrdersScreen extends ConsumerWidget {
                         child: ListView.separated(
                           scrollDirection: Axis.horizontal,
                           itemCount: order.items.length,
-                          separatorBuilder: (_, __) => SizedBox(width: 8.w),
+                          separatorBuilder: (_, _) => SizedBox(width: 8.w),
                           itemBuilder: (context, itemIndex) {
                             final cartItem = order.items[itemIndex];
                             final imageUrl = cartItem.product.images.isNotEmpty 

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../core/styling/app_colors.dart';
 import '../../../core/styling/app_styles.dart';
-import '../../../core/widgets/primay_button_widget.dart';
+import '../../../core/widgets/primary_button_widget.dart';
 
 class LogoutBottomSheet {
   // 1. The static show method requires the context and the callback function
@@ -75,7 +75,7 @@ class LogoutBottomSheet {
                   
                   // Confirm Logout Button
                   Expanded(
-                    child: PrimayButtonWidget(
+                    child: PrimaryButtonWidget(
                       buttonText: 'Yes, Logout',
                       // Trigger the logic passed down from AccountScreen!
                       onPress: onConfirmLogout, 

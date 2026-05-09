@@ -1,6 +1,6 @@
 import 'package:ecommerce_app/core/styling/app_colors.dart';
 import 'package:ecommerce_app/core/styling/app_styles.dart';
-import 'package:ecommerce_app/core/widgets/primay_button_widget.dart';
+import 'package:ecommerce_app/core/widgets/primary_button_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -45,7 +45,7 @@ class MyDetailsScreen extends ConsumerWidget {
                       radius: 50.r,
                       backgroundColor: AppColors.greyColor.withOpacity(0.2),
                       backgroundImage: NetworkImage(user.avatar),
-                      onBackgroundImageError: (_, __) => const Icon(Icons.person, size: 50),
+                      onBackgroundImageError: (_, _) => const Icon(Icons.person, size: 50),
                     ),
                     Container(
                       padding: EdgeInsets.all(8.w),
@@ -76,7 +76,7 @@ class MyDetailsScreen extends ConsumerWidget {
                 SizedBox(height: 40.h),
 
                 // 3. Save Button (Visual only for now, since Platzi doesn't have a PUT user endpoint)
-                PrimayButtonWidget(
+                PrimaryButtonWidget(
                   buttonText: 'Save Changes',
                   onPress: () {
                     ScaffoldMessenger.of(context).showSnackBar(
